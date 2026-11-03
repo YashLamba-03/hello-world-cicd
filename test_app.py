@@ -1,7 +1,10 @@
-from app import hello_Devops
+import unittest
+from app import main
 
-def test_hello_Devops():
-    assert hello_Devops() == "Hello, DevOps!"
+class TestHelloWorld(unittest.TestCase):
 
-def test_return_type():
-    assert isinstance(hello_Devops(), str)
+    def test_hello_world(self):
+        self.assertEqual(main(), "Hello, DevOps!")
+
+if __name__ == "__main__":
+    unittest.main()
