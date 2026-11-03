@@ -1,6 +1,4 @@
-
-
-def hello_world():
+def hello_world()
     return "Hello, DevOps!"
 
 
